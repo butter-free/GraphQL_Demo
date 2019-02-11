@@ -1,0 +1,10 @@
+{
+  "name": "GraphQL_Demo",
+  "version": "1.0.0",
+  "description": "movie api with graphql",
+  "main": "index.js",
+  "repository": "https://github.com/hy-sean/GraphQL_Demo.git",
+  "author": "hy_sean",
+  "license": "MIT",
+  "private": false
+}
