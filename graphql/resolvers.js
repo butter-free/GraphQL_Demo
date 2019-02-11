@@ -1,12 +1,13 @@
-const comet = {
-    name: "siwon",
-    age: 29,
-    gender: "male"
-}
+import { movies, getMovies, getMovieById, deleteMovie, addMovie } from "./DB/db";
 
 const resolvers = {
     Query: {
-        person: () => comet
+        movies: () => movies,
+        movie: (_, { id }) =>  getMovieById(id)
+    },
+    Mutation: {
+        addMovie: (_, { title, director, opening }) => addMovie(title, director, opening),
+        deleteMovie: (_, { id }) => deleteMovie(id)
     }
 }
 
