@@ -1,10 +1,20 @@
 {
-  "name": "GraphQL_Demo",
+  "name": "graphql_demo",
   "version": "1.0.0",
   "description": "movie api with graphql",
   "main": "index.js",
   "repository": "https://github.com/hy-sean/GraphQL_Demo.git",
   "author": "hy_sean",
   "license": "MIT",
-  "private": false
+  "dependencies": {
+    "graphql-yoga": "^1.17.4"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1"
+  }
 }
